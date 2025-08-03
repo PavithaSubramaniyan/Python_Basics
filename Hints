@@ -1,5 +1,8 @@
 Variable is a container to store values
 
+Keywords
+   We cannot use keywords as variables name ,identifier or function names  
+  
 # To store multiple values
 # It can contain any type of data: numbers, strings
 list = [10, 20, 30]
