@@ -1,5 +1,8 @@
 Variable is a container to store values
 
+Keywords
+   We cannot use keywords as variables name ,identifier or function names  
+  
 # To store multiple values
 # It can contain any type of data: numbers, strings
 list = [10, 20, 30]
@@ -13,3 +16,43 @@ Exception
 Invalid Syntax
   ----When numeric value starts in variable name like 1a 
   ----
+
+
+Basics of Data Structures in Python
+List: Ordered, mutable collection that can hold mixed data types. Defined with square brackets [].
+
+Tuple: Ordered, immutable collection (cannot change after creation).()
+
+Dictionary: Key-value pair storage, unordered and mutable.{}
+
+Set: Unordered, mutable collection of unique items.{}
+
+Method        |  Description                                              |  Example              | Error
+--------------+-----------------------------------------------------------+--------------------------------------------
+append(x)     |  Add elementxto the end of the list                       |  lst.append(5)     
+extend(iter)  |  Add all elements from iterable                           |  lst.extend([6, 7])
+insert(i, x)  |  Insertxat indexi                                         |  lst.insert(1, 'a')
+remove(x)     |  Remove first occurrence of valuex                        |  lst.remove('a')     |ValueError if not found
+pop([i])      |  Remove and return item at indexi(last if not specified)  |  lst.pop()           |IndexError if out-of-range
+clear()       |  Remove all items from list                               |  lst.clear()         |
+index(x)      |  Return first index of valuex                             |  lst.index(5)        |ValueError if not found
+count(x)      |  Count occurrences of valuex                              |  lst.count(7)        |
+sort()        |  Sort list in ascending order (in-place)                  |  lst.sort()          |TypeError if types incompatible
+reverse()     |  Reverse the list elements                                |  lst.reverse()       |
+copy()        |  Return a shallow copy of list                            |  lst2 = lst.copy()   |
+
+If the method’s job is to CHANGE the list by adding, removing, sorting, or re-ordering, never print it directly.
+“Transformer methods—call, then show!”
+
+Examples: sort(), reverse(), append(), extend(), insert(), clear()
+
+If the method FINDS, RETURNS, or GETS a value or item (not changing list structure), you can print it.
+
+Examples: pop(), count(x), index(x), copy()
+
+Action        |  Call, Then Print  |  Print Directly
+--------------+--------------------+----------------
+Changes list  |  Yes               |  No            
+Finds/gets    |  Yes/No            |  Yes           
+
+
